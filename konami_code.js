@@ -7,15 +7,18 @@ function init() {
   function keyCheck(e){
     const key = parseInt(e.detail||e.which)
 
+    console.log(key)
     if (key===code[index]) {
+      console.log("first if")
       index++
-
+      console.log(index)
       if (index === code.length) {
           alert('Congrats! You now have 30 lives!')
 
           index = 0
       }
     } else {
+      console.log('else')
       index = 0
     }
   }

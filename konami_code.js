@@ -23,5 +23,5 @@ function init() {
     }
   }
 
-  document.body.addEventListener('keypress', keyCheck)
+  document.body.addEventListener('keydown', keyCheck)
 }
